@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _64WPF.Model
 {
-    class BoardData
+    public class BoardData
     {
         public NumberChip[][] board;
 
@@ -28,9 +28,19 @@ namespace _64WPF.Model
             return board;
         }
 
+        public NumberChip getBoardPosition( int row, int column)
+        {
+            return board[row][column];
+        }
+
         public void setBoard(NumberChip[][] b)
         {
             board = b;
+        }
+
+        public void setBoardPosition( int row, int column, NumberChip chip)
+        {
+            board[row][column] = chip;
         }
 
     }
