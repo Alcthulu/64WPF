@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_64WPF"
         mc:Ignorable="d"
-        Title="64 The Game" Height="800" Width="800" Background="BlanchedAlmond">
-    <Grid>
+        Title="64 The Game" Height="820" MaxHeight="820" MinHeight="820"  Width="820" MaxWidth="820" MinWidth="820"  Background="BlanchedAlmond">
+    <Grid Margin="0" Height="800" Width="800">
         <Grid Margin="40" Background="White" >
             <Grid.RowDefinitions>
-                <RowDefinition />
+                <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -21,25 +21,25 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <!--Bordes primera fila-->
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Column="0" HorizontalAlignment="Left" Height="173" Grid.RowSpan="2" VerticalAlignment="Top" Width="177"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Column="1" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="180" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Column="2" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="178" Grid.RowSpan="2"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Column="3" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="178" Grid.RowSpan="2"/>
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
             <!--Bordes segunda fila-->
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Height="173" Grid.RowSpan="2" VerticalAlignment="Top" Width="177"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="180" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="178" Grid.RowSpan="2"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="178" Grid.RowSpan="2"/>
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180"/>
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
             <!--Bordes tercera fila-->
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left"  Grid.RowSpan="2" VerticalAlignment="Top" />
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="180" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="178" Grid.RowSpan="2"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="178" Grid.RowSpan="2"/>
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180"/>
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
             <!--Bordes Cuarta fila-->
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" Height="173" Grid.RowSpan="2" VerticalAlignment="Top" Width="177"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="1"  HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="180" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="178" Grid.RowSpan="2"/>
-            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Left" Height="173" Margin="0" VerticalAlignment="Top" Width="178" Grid.RowSpan="2"/>
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
+            <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" />
 
         </Grid>
     </Grid>
