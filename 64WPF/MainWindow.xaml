@@ -26,61 +26,61 @@
             </Grid.ColumnDefinitions>
             <!--Bordes primera fila-->
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L0x0" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L0x0" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L0x1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L0x1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L0x2" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L0x2" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L0x3" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L0x3" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <!--Bordes segunda fila-->
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180">
-                <Label Name="L1x0" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L1x0" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L1x1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L1x1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L1x2" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L1x2" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L1x3" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L1x3" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <!--Bordes tercera fila-->
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180">
-                <Label Name="L2x0" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L2x0" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L2x1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L2x1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L2x2" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L2x2" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L2x3" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L2x3" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <!--Bordes Cuarta fila-->
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L3x0" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L3x0" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L3x1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L3x1" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L3x2" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L3x2" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
             <Border BorderBrush="Black" BorderThickness="3" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Left" Height="180" Margin="0" VerticalAlignment="Top" Width="180" >
-                <Label Name="L3x3" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>
+                <Label Name="L3x3" Content=""  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="75"/>
             </Border>
 
 
         </Grid>
         <Button Name="Play" Content="Play" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Grid.Row="0" Height="40" Width="800" FontSize="24" Click="Play_Click"/>
-        <Label Name="GAMEOVER" Content="GAME OVER" Margin="0,240,0,306.6" Grid.Row="1" VerticalAlignment="Center" Height="223" Width="800" Foreground="Red" FontSize="140" FontStyle="Italic" RenderTransformOrigin="0.984,2.924" HorizontalAlignment="Center" FontWeight="Bold" Visibility="Hidden"/>
+        <Label Name="GAMEOVER" Content="GAME OVER" Margin="30,251,10,295.6" Grid.Row="1" VerticalAlignment="Center" Height="223" Width="760" Foreground="Red" FontSize="130" FontStyle="Italic" RenderTransformOrigin="0.984,2.924" HorizontalAlignment="Center" FontWeight="Bold" Visibility="Hidden"/>
         <Label Name="YOUWIN" Content="YOU WIN" Margin="67,240,67,306.6" Grid.Row="1" VerticalAlignment="Center" Height="223" Width="666" Foreground="#FF00FF03" FontSize="140" FontStyle="Italic" RenderTransformOrigin="0.984,2.924" HorizontalAlignment="Center" FontWeight="Bold" Visibility="Hidden"/>
     </Grid>
 </Window>

@@ -111,136 +111,16 @@ namespace _64WPF
                     switch (column)
                     {
                         case 0:
-                            switch (value)
-                            {
-                                case 2:
-                                    L0x0.Content = value.ToString();
-                                    L0x0.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L0x0.Content = value.ToString();
-                                    L0x0.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L0x0.Content = value.ToString();
-                                    L0x0.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L0x0.Content = value.ToString();
-                                    L0x0.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L0x0.Content = value.ToString();
-                                    L0x0.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L0x0.Content = value.ToString();
-                                    L0x0.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L0x0.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L0x0, value); 
                             break;
                         case 1:
-                            switch (value)
-                            {
-                                case 2:
-                                    L0x1.Content = value.ToString();
-                                    L0x1.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L0x1.Content = value.ToString();
-                                    L0x1.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L0x1.Content = value.ToString();
-                                    L0x1.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L0x1.Content = value.ToString();
-                                    L0x1.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L0x1.Content = value.ToString();
-                                    L0x1.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L0x1.Content = value.ToString();
-                                    L0x1.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L0x1.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L0x1, value);
                             break;
                         case 2:
-                            switch (value)
-                            {
-                                case 2:
-                                    L0x2.Content = value.ToString();
-                                    L0x2.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L0x2.Content = value.ToString();
-                                    L0x2.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L0x2.Content = value.ToString();
-                                    L0x2.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L0x2.Content = value.ToString();
-                                    L0x2.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L0x2.Content = value.ToString();
-                                    L0x2.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L0x2.Content = value.ToString();
-                                    L0x2.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L0x2.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L0x2, value);
                             break;
                         case 3:
-                            switch (value)
-                            {
-                                case 2:
-                                    L0x3.Content = value.ToString();
-                                    L0x3.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L0x3.Content = value.ToString();
-                                    L0x3.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L0x3.Content = value.ToString();
-                                    L0x3.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L0x3.Content = value.ToString();
-                                    L0x3.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L0x3.Content = value.ToString();
-                                    L0x3.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L0x3.Content = value.ToString();
-                                    L0x3.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L0x3.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L0x3, value);
                             break;
                     }
                     break;
@@ -248,136 +128,16 @@ namespace _64WPF
                     switch (column)
                     {
                         case 0:
-                            switch (value)
-                            {
-                                case 2:
-                                    L1x0.Content = value.ToString();
-                                    L1x0.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L1x0.Content = value.ToString();
-                                    L1x0.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L1x0.Content = value.ToString();
-                                    L1x0.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L1x0.Content = value.ToString();
-                                    L1x0.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L1x0.Content = value.ToString();
-                                    L1x0.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L1x0.Content = value.ToString();
-                                    L1x0.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L1x0.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L1x0, value);
                             break;
                         case 1:
-                            switch (value)
-                            {
-                                case 2:
-                                    L1x1.Content = value.ToString();
-                                    L1x1.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L1x1.Content = value.ToString();
-                                    L1x1.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L1x1.Content = value.ToString();
-                                    L1x1.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L1x1.Content = value.ToString();
-                                    L1x1.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L1x1.Content = value.ToString();
-                                    L1x1.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L1x1.Content = value.ToString();
-                                    L1x1.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L1x1.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L1x1, value);
                             break;
                         case 2:
-                            switch (value)
-                            {
-                                case 2:
-                                    L1x2.Content = value.ToString();
-                                    L1x2.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L1x2.Content = value.ToString();
-                                    L1x2.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L1x2.Content = value.ToString();
-                                    L1x2.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L1x2.Content = value.ToString();
-                                    L1x2.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L1x2.Content = value.ToString();
-                                    L1x2.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L1x2.Content = value.ToString();
-                                    L1x2.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L1x2.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L1x2, value);
                             break;
                         case 3:
-                            switch (value)
-                            {
-                                case 2:
-                                    L1x3.Content = value.ToString();
-                                    L1x3.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L1x3.Content = value.ToString();
-                                    L1x3.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L1x3.Content = value.ToString();
-                                    L1x3.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L1x3.Content = value.ToString();
-                                    L1x3.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L1x3.Content = value.ToString();
-                                    L1x3.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L1x3.Content = value.ToString();
-                                    L1x3.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L1x3.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L1x3, value);
                             break;
                     }
                     break;
@@ -385,136 +145,16 @@ namespace _64WPF
                     switch (column)
                     {
                         case 0:
-                            switch (value)
-                            {
-                                case 2:
-                                    L2x0.Content = value.ToString();
-                                    L2x0.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L2x0.Content = value.ToString();
-                                    L2x0.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L2x0.Content = value.ToString();
-                                    L2x0.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L2x0.Content = value.ToString();
-                                    L2x0.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L2x0.Content = value.ToString();
-                                    L2x0.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L2x0.Content = value.ToString();
-                                    L2x0.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L2x0.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L2x0, value);
                             break;
                         case 1:
-                            switch (value)
-                            {
-                                case 2:
-                                    L2x1.Content = value.ToString();
-                                    L2x1.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L2x1.Content = value.ToString();
-                                    L2x1.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L2x1.Content = value.ToString();
-                                    L2x1.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L2x1.Content = value.ToString();
-                                    L2x1.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L2x1.Content = value.ToString();
-                                    L2x1.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L2x1.Content = value.ToString();
-                                    L2x1.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L2x1.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L2x1, value);
                             break;
                         case 2:
-                            switch (value)
-                            {
-                                case 2:
-                                    L2x2.Content = value.ToString();
-                                    L2x2.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L2x2.Content = value.ToString();
-                                    L2x2.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L2x2.Content = value.ToString();
-                                    L2x2.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L2x2.Content = value.ToString();
-                                    L2x2.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L2x2.Content = value.ToString();
-                                    L2x2.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L2x2.Content = value.ToString();
-                                    L2x2.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L2x2.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L2x2, value);
                             break;
                         case 3:
-                            switch (value)
-                            {
-                                case 2:
-                                    L2x3.Content = value.ToString();
-                                    L2x3.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L2x3.Content = value.ToString();
-                                    L2x3.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L2x3.Content = value.ToString();
-                                    L2x3.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L2x3.Content = value.ToString();
-                                    L2x3.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L2x3.Content = value.ToString();
-                                    L2x3.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L2x3.Content = value.ToString();
-                                    L2x3.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L2x3.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L2x3, value);
                             break;
 
                     }
@@ -523,139 +163,78 @@ namespace _64WPF
                     switch (column)
                     {
                         case 0:
-                            switch (value)
-                            {
-                                case 2:
-                                    L3x0.Content = value.ToString();
-                                    L3x0.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L3x0.Content = value.ToString();
-                                    L3x0.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L3x0.Content = value.ToString();
-                                    L3x0.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L3x0.Content = value.ToString();
-                                    L3x0.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L3x0.Content = value.ToString();
-                                    L3x0.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L3x0.Content = value.ToString();
-                                    L3x0.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L3x0.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L3x0, value);
                             break;
                         case 1:
-                            switch (value)
-                            {
-                                case 2:
-                                    L3x1.Content = value.ToString();
-                                    L3x1.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L3x1.Content = value.ToString();
-                                    L3x1.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L3x1.Content = value.ToString();
-                                    L3x1.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L3x1.Content = value.ToString();
-                                    L3x1.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L3x1.Content = value.ToString();
-                                    L3x1.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L3x1.Content = value.ToString();
-                                    L3x1.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L3x1.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L3x1, value);
                             break;
                         case 2:
-                            switch (value)
-                            {
-                                case 2:
-                                    L3x2.Content = value.ToString();
-                                    L3x2.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L3x2.Content = value.ToString();
-                                    L3x2.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L3x2.Content = value.ToString();
-                                    L3x2.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L3x2.Content = value.ToString();
-                                    L3x2.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L3x2.Content = value.ToString();
-                                    L3x2.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L3x2.Content = value.ToString();
-                                    L3x2.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L3x2.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L3x2, value);
                             break;
                         case 3:
-                            switch (value)
-                            {
-                                case 2:
-                                    L3x3.Content = value.ToString();
-                                    L3x3.Foreground = new SolidColorBrush(Colors.Red);
-                                    break;
-                                case 4:
-                                    L3x3.Content = value.ToString();
-                                    L3x3.Foreground = new SolidColorBrush(Colors.Blue);
-                                    break;
-                                case 8:
-                                    L3x3.Content = value.ToString();
-                                    L3x3.Foreground = new SolidColorBrush(Colors.Yellow);
-                                    break;
-                                case 16:
-                                    L3x3.Content = value.ToString();
-                                    L3x3.Foreground = new SolidColorBrush(Colors.Green);
-                                    break;
-                                case 32:
-                                    L3x3.Content = value.ToString();
-                                    L3x3.Foreground = new SolidColorBrush(Colors.Brown);
-                                    break;
-                                case 64:
-                                    L3x3.Content = value.ToString();
-                                    L3x3.Foreground = new SolidColorBrush(Colors.Purple);
-                                    break;
-                                default:
-                                    L3x3.Content = "";
-                                    break;
-
-                            }
+                            DrawIt(L3x3, value);
                             break;
                     }
                     break;
+            }
+        }
+
+        private void DrawIt(Label l, int value)
+        {
+            switch (value)
+            {
+                case 2:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Red);
+                    break;
+                case 4:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Blue);
+                    break;
+                case 8:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Yellow);
+                    break;
+                case 16:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Green);
+                    break;
+                case 32:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Brown);
+                    break;
+                case 64:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Purple);
+                    break;
+                case 128:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Cyan);
+                    break;
+                case 256:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.DarkGoldenrod);
+                    break;
+                case 512:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Indigo);
+                    break;
+                case 1024:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.SpringGreen);
+                    break;
+                case 2048:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Plum);
+                    break;
+                case 4096:
+                    l.Content = value.ToString();
+                    l.Foreground = new SolidColorBrush(Colors.Silver);
+                    break;
+                default:
+                    l.Content = "";
+                    break;
+
             }
         }
 

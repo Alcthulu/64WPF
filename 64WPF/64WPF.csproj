@@ -100,10 +100,5 @@
   <ItemGroup>
     <Folder Include="View\" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\ficha2.bmp" />
-    <Resource Include="Images\ficha2.jpg" />
-    <Resource Include="Images\ficha2.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
