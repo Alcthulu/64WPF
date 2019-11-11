@@ -10,7 +10,7 @@ namespace _64WPF.Controller
     class GameController
     {
         public BoardData board;
-        int WinCondition = 4096;
+        public int WinCondition = 4096;
         bool Win = false;
 
         public GameController()

@@ -1,4 +1,5 @@
 ﻿using _64WPF.Controller;
+using _64WPF.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,15 +27,18 @@ namespace _64WPF
         int[][] boardMapping;
         int size = 4;
         DispatcherTimer timer;
+        SettingsWindow sett;
        
 
         public MainWindow()
         {
             InitializeComponent();
             SetGame();
+            WinCond.Content = GC.WinCondition;
             timer = new DispatcherTimer();
             timer.Tick += OnTick;
             timer.Interval = new TimeSpan(0, 0, 0, 0, 10);
+            
 
         }
 
@@ -55,6 +59,7 @@ namespace _64WPF
                     boardMapping[i][j] = 0;
                 }
             }
+            
 
         }
 
@@ -68,6 +73,7 @@ namespace _64WPF
             else
             {
                 timer.Start();
+                WinCond.Content = GC.WinCondition;
                 ((Button)sender).Content = "Surrender";
                 for (int i = 0; i < size; i++)
                 {
@@ -330,6 +336,28 @@ namespace _64WPF
             timer.Stop();
             if (GAMEOVER.Visibility == Visibility.Hidden) GAMEOVER.Visibility = Visibility.Visible;
             Play.Content = "Play again";
+        }
+
+
+        private void Settings_Click(object sender, RoutedEventArgs e)
+        {
+            sett = new SettingsWindow(GC.WinCondition);
+            sett.Owner = this;
+            sett.title = Title;
+            sett.newTitle += Sett_newTitle;
+            sett.newDifficulty += Sett_newDifficulty;
+            sett.Show();
+        }
+
+        private void Sett_newDifficulty(object sender, difficultyEventArgs e)
+        {
+            GC.WinCondition = e.winCondition;
+            WinCond.Content = GC.WinCondition;
+        }
+
+        private void Sett_newTitle(object sender, titleEventsArgs e)
+        {
+            Title = e.title;
         }
     }
 
