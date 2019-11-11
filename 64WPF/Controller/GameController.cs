@@ -10,6 +10,8 @@ namespace _64WPF.Controller
     class GameController
     {
         public BoardData board;
+        int WinCondition = 64;
+        bool Win = false;
 
         public GameController()
         {
@@ -31,6 +33,11 @@ namespace _64WPF.Controller
             NumberChip chip = new NumberChip(value);
             column = randomGenerator.Next(4);
             row = randomGenerator.Next(4);
+            while (board.getBoardPosition(row, column).getValue() != 0)
+            {
+                column = randomGenerator.Next(4);
+                row = randomGenerator.Next(4);
+            }
             board.setBoardPosition(row, column, chip);
             
         }
@@ -39,6 +46,74 @@ namespace _64WPF.Controller
         {
             BoardData aux = new BoardData(4);
             board.setBoard(aux.board);
+            Win = false;
+        }
+
+        internal int getBoardPosition(int i, int j)
+        {
+            return board.getBoardPosition(i, j).getValue();
+        }
+
+        internal void setBoardPosition(int row, int column, int value)
+        {
+            NumberChip chip = new NumberChip(value);
+            board.setBoardPosition(row, column, chip);
+        }
+
+        internal bool MoveDown()
+        {
+            bool movimiento = false;
+            bool[] sumado = { false, false, false, false };
+            for(int row=board.size-2; row > -1; row--)
+            {
+                for(int column=0; column < board.size; column++)
+                {
+                    if(board.getBoardPosition(row,column).getValue() != 0)
+                    {
+                        for(int k=row; k < board.size-1; k++)
+                        {
+                            if(board.getBoardPosition(k+1, column).getValue() == 0)
+                            {
+                                board.getBoardPosition(k + 1, column).setValue(board.getBoardPosition(k, column).getValue());
+                                board.getBoardPosition(k, column).setValue(0);
+                                movimiento = true;
+                            }
+                            else if(board.getBoardPosition(k + 1, column).getValue() == board.getBoardPosition(k, column).getValue())
+                            {
+                                if (!sumado[column])
+                                {
+                                    board.getBoardPosition(k + 1, column).setValue(board.getBoardPosition(k, column).getValue()*2);
+                                    board.getBoardPosition(k, column).setValue(0);
+                                    if (board.getBoardPosition(k + 1, column).getValue() == WinCondition) Win = true; 
+                                    sumado[column] = true;
+                                    movimiento = true;
+                                }
+                            }
+                        }
+                        
+                    }
+
+                }
+            }
+            return movimiento;
+        }
+
+        internal bool IsFull()
+        {
+            bool full = true;
+            for( int row = 0; row < board.size; row++)
+            {
+                for( int column = 0; column < board.size; column++)
+                {
+                    if (board.getBoardPosition(row, column).getValue() == 0) full = false;
+                }
+            }
+            return full;
+        }
+
+        internal bool getWin()
+        {
+            return Win;
         }
     }
 }

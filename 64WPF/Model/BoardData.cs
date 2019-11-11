@@ -9,9 +9,11 @@ namespace _64WPF.Model
     public class BoardData
     {
         public NumberChip[][] board;
+        public int size;
 
         public BoardData(int size)
         {
+            this.size = size;
             board = new NumberChip[size][];
             for(int i = 0; i < size; i++)
             {

@@ -63,9 +63,7 @@ namespace _64WPF
 
             if (timer.IsEnabled)
             {
-                timer.Stop();
-                if (GAMEOVER.Visibility == Visibility.Hidden) GAMEOVER.Visibility = Visibility.Visible;
-                ((Button)sender).Content = "Play";
+                LoseGame();
             }
             else
             {
@@ -670,6 +668,65 @@ namespace _64WPF
                 }
             }
             UpdateBoardDrawing();
+        }
+
+        private void UpdateBoardMapping()
+        {
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    boardMapping[i][j] = GC.getBoardPosition(i, j);
+                }
+            }
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            bool movimiento = false, hayHueco = true, win = false;
+            if (timer.IsEnabled)
+            {
+                switch (e.Key)
+                {
+                    case Key.Left:
+                        
+                        break;
+
+                    case Key.Right:
+                       
+                        break;
+
+                    case Key.Up:
+                        break;
+
+                    case Key.Down:
+                        
+                            movimiento = GC.MoveDown();
+                            hayHueco = !GC.IsFull();
+                            win = GC.getWin();
+                            UpdateBoardMapping();
+                            UpdateBoardDrawing();
+                            if (movimiento && hayHueco && !win) AddChip();
+                            else if (win) WinGame();
+                            else if (!hayHueco) LoseGame();
+                            break;
+                        
+                }
+            }
+        }
+
+        private void WinGame()
+        {
+            timer.Stop();
+            if (YOUWIN.Visibility == Visibility.Hidden) YOUWIN.Visibility = Visibility.Visible;
+            Play.Content = "Play";
+        }
+
+        private void LoseGame()
+        {
+            timer.Stop();
+            if (GAMEOVER.Visibility == Visibility.Hidden) GAMEOVER.Visibility = Visibility.Visible;
+            Play.Content = "Play";
         }
     }
 
