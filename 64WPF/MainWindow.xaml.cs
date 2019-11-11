@@ -346,7 +346,28 @@ namespace _64WPF
             sett.title = Title;
             sett.newTitle += Sett_newTitle;
             sett.newDifficulty += Sett_newDifficulty;
+            sett.newFontSize += Sett_newFontSize;
             sett.Show();
+        }
+
+        private void Sett_newFontSize(object sender, fontSizeEventArgs e)
+        {
+            L0x0.FontSize = e.fontSize;
+            L0x1.FontSize = e.fontSize;
+            L0x2.FontSize = e.fontSize;
+            L0x3.FontSize = e.fontSize;
+            L1x0.FontSize = e.fontSize;
+            L1x1.FontSize = e.fontSize;
+            L1x2.FontSize = e.fontSize;
+            L1x3.FontSize = e.fontSize;
+            L2x0.FontSize = e.fontSize;
+            L2x1.FontSize = e.fontSize;
+            L2x2.FontSize = e.fontSize;
+            L2x3.FontSize = e.fontSize;
+            L3x0.FontSize = e.fontSize;
+            L3x1.FontSize = e.fontSize;
+            L3x2.FontSize = e.fontSize;
+            L3x3.FontSize = e.fontSize;
         }
 
         private void Sett_newDifficulty(object sender, difficultyEventArgs e)

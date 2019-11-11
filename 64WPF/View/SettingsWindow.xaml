@@ -26,6 +26,6 @@
         <CheckBox Name="Easy" Content="Easy" Grid.Column="1" HorizontalAlignment="Left" Margin="11.4,25,0,0" VerticalAlignment="Top" Checked="Easy_Checked"/>
         <CheckBox Name="Normal"  Content="Normal" Grid.Column="1" HorizontalAlignment="Left" Margin="67.4,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.106,0.309" Checked="Normal_Checked"/>
         <CheckBox Name="Hard" Content="Hard" Grid.Column="1" HorizontalAlignment="Left" Margin="141.4,25,0,0" VerticalAlignment="Top" Checked="Hard_Checked"/>
-        <Slider Name="LetterSize" HorizontalAlignment="Left" Margin="208,21.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" Maximum="75" TickFrequency="5" Grid.ColumnSpan="2"/>
+        <Slider Name="FontSize" HorizontalAlignment="Left" Margin="208,21.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" Maximum="75" Minimum="10" Value="75" TickFrequency="5" Grid.ColumnSpan="2" ValueChanged="FontSize_ValueChanged"/>
     </Grid>
 </Window>

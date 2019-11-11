@@ -21,6 +21,7 @@ namespace _64WPF.View
     {
         public event titleEventHandler newTitle;
         public event difficultyEventHandler newDifficulty;
+        public event fontSizeEventHandler newFontSize;
 
         int condicion;
 
@@ -34,6 +35,11 @@ namespace _64WPF.View
             if (newDifficulty != null) newDifficulty(this, new difficultyEventArgs(condicion));
         }
 
+        void OnNewFontSize(double d)
+        {
+            if (newFontSize != null) newFontSize(this, new fontSizeEventArgs(d));
+        }
+
         public String title
         {
             get { return titleBox.Text; }
@@ -44,6 +50,12 @@ namespace _64WPF.View
         {
             get { return condicion; }
             set { condicion = value; }
+        }
+
+        public double fontSize
+        {
+            get { return FontSize.Value; }
+            set { FontSize.Value = value; }
         }
         public SettingsWindow(int cond)
         {
@@ -111,6 +123,11 @@ namespace _64WPF.View
             condicion = 4096;
             OnNewDifficulty();
         }
+
+        private void FontSize_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            OnNewFontSize(FontSize.Value);
+        }
     }
 
     //Clase Args para el cambio de titulo
@@ -137,9 +154,9 @@ namespace _64WPF.View
 
     public class fontSizeEventArgs : EventArgs
     {
-        public int fontSize { get; set; }
+        public double fontSize { get; set; }
 
-        public fontSizeEventArgs(int i)
+        public fontSizeEventArgs(double i)
         {
             fontSize = i;
         }
