@@ -64,9 +64,9 @@ namespace _64WPF.Controller
         {
             bool movimiento = false;
             bool[] sumado = { false, false, false, false };
-            for(int row=board.size-2; row > -1; row--)
+            for(int column = 0; column < board.size; column++)
             {
-                for(int column=0; column < board.size; column++)
+                for(int row = board.size - 2; row > -1; row--)
                 {
                     if(board.getBoardPosition(row,column).getValue() != 0)
                     {
@@ -91,6 +91,120 @@ namespace _64WPF.Controller
                             }
                         }
                         
+                    }
+
+                }
+            }
+            return movimiento;
+        }
+
+        internal bool MoveUp()
+        {
+            bool movimiento = false;
+            bool[] sumado = { false, false, false, false };
+            for (int column = 0; column < board.size; column++)
+            {
+                for (int row = 1; row < board.size; row++)
+                {
+                    if (board.getBoardPosition(row, column).getValue() != 0)
+                    {
+                        for (int k = row; k > 0; k--)
+                        {
+                            if (board.getBoardPosition(k - 1, column).getValue() == 0)
+                            {
+                                board.getBoardPosition(k - 1, column).setValue(board.getBoardPosition(k, column).getValue());
+                                board.getBoardPosition(k, column).setValue(0);
+                                movimiento = true;
+                            }
+                            else if (board.getBoardPosition(k - 1, column).getValue() == board.getBoardPosition(k, column).getValue())
+                            {
+                                if (!sumado[column])
+                                {
+                                    board.getBoardPosition(k - 1, column).setValue(board.getBoardPosition(k, column).getValue() * 2);
+                                    board.getBoardPosition(k, column).setValue(0);
+                                    if (board.getBoardPosition(k - 1, column).getValue() == WinCondition) Win = true;
+                                    sumado[column] = true;
+                                    movimiento = true;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+            return movimiento;
+        }
+
+        internal bool MoveRight()
+        {
+            bool movimiento = false;
+            bool[] sumado = { false, false, false, false };
+            for (int row = 0; row < board.size; row++)
+            {
+                for (int column = board.size - 2; column > -1; column--)
+                {
+                    if (board.getBoardPosition(row, column).getValue() != 0)
+                    {
+                        for (int k = column; k < board.size - 1; k++)
+                        {
+                            if (board.getBoardPosition(row, k + 1).getValue() == 0)
+                            {
+                                board.getBoardPosition(row, k + 1).setValue(board.getBoardPosition(row, k).getValue());
+                                board.getBoardPosition(row, k).setValue(0);
+                                movimiento = true;
+                            }
+                            else if (board.getBoardPosition(row, k + 1).getValue() == board.getBoardPosition(row, k).getValue())
+                            {
+                                if (!sumado[row])
+                                {
+                                    board.getBoardPosition(row, k + 1).setValue(board.getBoardPosition(row, k).getValue() * 2);
+                                    board.getBoardPosition(row, k).setValue(0);
+                                    if (board.getBoardPosition(row, k + 1).getValue() == WinCondition) Win = true;
+                                    sumado[row] = true;
+                                    movimiento = true;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+            return movimiento;
+        }
+
+        internal bool MoveLeft()
+        {
+            bool movimiento = false;
+            bool[] sumado = { false, false, false, false };
+            for (int row = 0; row < board.size; row++)
+            {
+                for (int column = 1; column < board.size; column++)
+                {
+                    if (board.getBoardPosition(row, column).getValue() != 0)
+                    {
+                        for (int k = column; k > 0; k--)
+                        {
+                            if (board.getBoardPosition(row, k - 1).getValue() == 0)
+                            {
+                                board.getBoardPosition(row, k - 1).setValue(board.getBoardPosition(row, k).getValue());
+                                board.getBoardPosition(row, k).setValue(0);
+                                movimiento = true;
+                            }
+                            else if (board.getBoardPosition(row, k - 1).getValue() == board.getBoardPosition(row, k).getValue())
+                            {
+                                if (!sumado[row])
+                                {
+                                    board.getBoardPosition(row, k - 1).setValue(board.getBoardPosition(row, k).getValue() * 2);
+                                    board.getBoardPosition(row, k).setValue(0);
+                                    if (board.getBoardPosition(row, k - 1).getValue() == WinCondition) Win = true;
+                                    sumado[row] = true;
+                                    movimiento = true;
+                                }
+                            }
+                        }
+
                     }
 
                 }

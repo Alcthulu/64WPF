@@ -77,6 +77,8 @@ namespace _64WPF
                     }
                 }
                 if (GAMEOVER.Visibility == Visibility.Visible) GAMEOVER.Visibility = Visibility.Hidden;
+                if (YOUWIN.Visibility == Visibility.Visible) YOUWIN.Visibility = Visibility.Hidden;
+
                 ResetBoard();
                 AddChip();
             }
@@ -689,27 +691,49 @@ namespace _64WPF
                 switch (e.Key)
                 {
                     case Key.Left:
-                        
+                        movimiento = GC.MoveLeft();
+                        hayHueco = !GC.IsFull();
+                        win = GC.getWin();
+                        UpdateBoardMapping();
+                        UpdateBoardDrawing();
+                        if (movimiento && hayHueco && !win) AddChip();
+                        else if (win) WinGame();
+                        else if (!hayHueco) LoseGame();
                         break;
 
                     case Key.Right:
-                       
+                        movimiento = GC.MoveRight();
+                        hayHueco = !GC.IsFull();
+                        win = GC.getWin();
+                        UpdateBoardMapping();
+                        UpdateBoardDrawing();
+                        if (movimiento && hayHueco && !win) AddChip();
+                        else if (win) WinGame();
+                        else if (!hayHueco) LoseGame();
                         break;
 
                     case Key.Up:
+                        movimiento = GC.MoveUp();
+                        hayHueco = !GC.IsFull();
+                        win = GC.getWin();
+                        UpdateBoardMapping();
+                        UpdateBoardDrawing();
+                        if (movimiento && hayHueco && !win) AddChip();
+                        else if (win) WinGame();
+                        else if (!hayHueco) LoseGame();
                         break;
 
                     case Key.Down:
                         
-                            movimiento = GC.MoveDown();
-                            hayHueco = !GC.IsFull();
-                            win = GC.getWin();
-                            UpdateBoardMapping();
-                            UpdateBoardDrawing();
-                            if (movimiento && hayHueco && !win) AddChip();
-                            else if (win) WinGame();
-                            else if (!hayHueco) LoseGame();
-                            break;
+                        movimiento = GC.MoveDown();
+                        hayHueco = !GC.IsFull();
+                        win = GC.getWin();
+                        UpdateBoardMapping();
+                        UpdateBoardDrawing();
+                        if (movimiento && hayHueco && !win) AddChip();
+                        else if (win) WinGame();
+                        else if (!hayHueco) LoseGame();
+                        break;
                         
                 }
             }
@@ -719,14 +743,14 @@ namespace _64WPF
         {
             timer.Stop();
             if (YOUWIN.Visibility == Visibility.Hidden) YOUWIN.Visibility = Visibility.Visible;
-            Play.Content = "Play";
+            Play.Content = "Play again";
         }
 
         private void LoseGame()
         {
             timer.Stop();
             if (GAMEOVER.Visibility == Visibility.Hidden) GAMEOVER.Visibility = Visibility.Visible;
-            Play.Content = "Play";
+            Play.Content = "Play again";
         }
     }
 
