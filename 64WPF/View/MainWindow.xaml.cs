@@ -2,6 +2,7 @@
 using _64WPF.View;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +29,6 @@ namespace _64WPF
         int size = 4;
         DispatcherTimer timer;
         SettingsWindow sett;
-       
 
         public MainWindow()
         {
@@ -38,7 +38,6 @@ namespace _64WPF
             timer = new DispatcherTimer();
             timer.Tick += OnTick;
             timer.Interval = new TimeSpan(0, 0, 0, 0, 10);
-            
 
         }
 
@@ -59,8 +58,6 @@ namespace _64WPF
                     boardMapping[i][j] = 0;
                 }
             }
-            
-
         }
 
         private void Play_Click(object sender, RoutedEventArgs e){
@@ -341,7 +338,7 @@ namespace _64WPF
 
         private void Settings_Click(object sender, RoutedEventArgs e)
         {
-            sett = new SettingsWindow(GC.WinCondition);
+            sett = new SettingsWindow(GC);
             sett.Owner = this;
             sett.title = Title;
             sett.newTitle += Sett_newTitle;
@@ -349,6 +346,7 @@ namespace _64WPF
             sett.newFontSize += Sett_newFontSize;
             sett.Show();
         }
+
 
         private void Sett_newFontSize(object sender, fontSizeEventArgs e)
         {

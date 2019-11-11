@@ -1,21 +1,39 @@
 ﻿using _64WPF.Model;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace _64WPF.Controller
 {
-    class GameController
+    public class GameController
     {
         public BoardData board;
+        public ObservableCollection<ChipForCollection> ChipsCollection { get; set; }
         public int WinCondition = 4096;
         bool Win = false;
 
         public GameController()
         {
             board = new BoardData(4);
+            ChipsCollection = new ObservableCollection<ChipForCollection>();
+            updateChipCollection();
+        }
+
+        private void updateChipCollection()
+        {
+            ChipsCollection.Clear();
+            for(int i = 0; i < board.size; i++)
+            {
+                for(int j = 0; j < board.size; j++)
+                {
+                    ChipForCollection aux = new ChipForCollection(board.getBoardPosition(i, j).getValue(), i, j);
+                    ChipsCollection.Add(aux);
+                }
+            }
         }
 
         public void newChip(ref int row, ref int column, ref int value)
@@ -39,6 +57,7 @@ namespace _64WPF.Controller
                 row = randomGenerator.Next(4);
             }
             board.setBoardPosition(row, column, chip);
+            updateChipCollection();
             
         }
 
@@ -47,6 +66,7 @@ namespace _64WPF.Controller
             BoardData aux = new BoardData(4);
             board.setBoard(aux.board);
             Win = false;
+            updateChipCollection();
         }
 
         internal int getBoardPosition(int i, int j)
@@ -95,6 +115,7 @@ namespace _64WPF.Controller
 
                 }
             }
+            updateChipCollection();
             return movimiento;
         }
 
@@ -133,6 +154,7 @@ namespace _64WPF.Controller
 
                 }
             }
+            updateChipCollection();
             return movimiento;
         }
 
@@ -171,6 +193,7 @@ namespace _64WPF.Controller
 
                 }
             }
+            updateChipCollection();
             return movimiento;
         }
 
@@ -209,6 +232,7 @@ namespace _64WPF.Controller
 
                 }
             }
+            updateChipCollection();
             return movimiento;
         }
 

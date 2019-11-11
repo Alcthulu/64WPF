@@ -1,5 +1,7 @@
-﻿using System;
+﻿using _64WPF.Controller;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +24,8 @@ namespace _64WPF.View
         public event titleEventHandler newTitle;
         public event difficultyEventHandler newDifficulty;
         public event fontSizeEventHandler newFontSize;
+
+        GameController gc;
 
         int condicion;
 
@@ -57,10 +61,13 @@ namespace _64WPF.View
             get { return FontSize.Value; }
             set { FontSize.Value = value; }
         }
-        public SettingsWindow(int cond)
+
+        public SettingsWindow(GameController g)
         {
             InitializeComponent();
-            condicion = cond;
+            condicion = g.WinCondition;
+            gc = g;
+            DataContext = gc;
             switch (condicion)
             {
                 case 64:
@@ -161,6 +168,8 @@ namespace _64WPF.View
             fontSize = i;
         }
     }
+
+
 
     public delegate void titleEventHandler(Object sender, titleEventsArgs e);
     public delegate void difficultyEventHandler(Object sender, difficultyEventArgs e);

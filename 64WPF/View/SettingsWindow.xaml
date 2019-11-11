@@ -27,5 +27,13 @@
         <CheckBox Name="Normal"  Content="Normal" Grid.Column="1" HorizontalAlignment="Left" Margin="67.4,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.106,0.309" Checked="Normal_Checked"/>
         <CheckBox Name="Hard" Content="Hard" Grid.Column="1" HorizontalAlignment="Left" Margin="141.4,25,0,0" VerticalAlignment="Top" Checked="Hard_Checked"/>
         <Slider Name="FontSize" HorizontalAlignment="Left" Margin="208,21.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" Maximum="75" Minimum="10" Value="75" TickFrequency="5" Grid.ColumnSpan="2" ValueChanged="FontSize_ValueChanged"/>
+        <DataGrid Name="tablaFichas"  Margin="10,10,10.2,10"  ItemsSource="{Binding ChipsCollection}" AutoGenerateColumns="False" AlternatingRowBackground="Gainsboro" Grid.Row="2" Grid.ColumnSpan="2" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Fila" Width="100" IsReadOnly="True" FontSize="10" FontWeight="Bold" Visibility="Visible" Foreground="Black" Binding="{Binding Fila}"/>
+                <DataGridTextColumn Header="Columna" Width="100" IsReadOnly="True" FontSize="10" FontWeight="Bold" Visibility="Visible" Foreground="Black" Binding="{Binding Columna}"/>
+                <DataGridTextColumn Header="Valor" Width="100" IsReadOnly="True" FontSize="10" FontWeight="Bold" Visibility="Visible" Foreground="Black" Binding="{Binding Valor}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
